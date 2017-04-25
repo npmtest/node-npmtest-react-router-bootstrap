@@ -1,6 +1,6 @@
 # npmtest-react-router-bootstrap
 
-#### test coverage for  [react-router-bootstrap (v0.23.1)](https://github.com/react-bootstrap/react-router-bootstrap)  [![npm package](https://img.shields.io/npm/v/npmtest-react-router-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-router-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-router-bootstrap.svg)](https://travis-ci.org/npmtest/node-npmtest-react-router-bootstrap)
+#### basic test coverage for  [react-router-bootstrap (v0.24.2)](https://github.com/react-bootstrap/react-router-bootstrap)  [![npm package](https://img.shields.io/npm/v/npmtest-react-router-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-router-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-router-bootstrap.svg)](https://travis-ci.org/npmtest/node-npmtest-react-router-bootstrap)
 
 #### Integration between React Router and React-Bootstrap
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-router-bootstrap/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-router-bootstrap/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-react-router-bootstrap/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-router-bootstrap/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-router-bootstrap/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-react-router-bootstrap/build/coverage.html/index.html)
 
@@ -41,73 +41,72 @@
     "bugs": {
         "url": "https://github.com/react-bootstrap/react-router-bootstrap/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+        "prop-types": "^15.5.8"
+    },
     "description": "Integration between React Router and React-Bootstrap",
     "devDependencies": {
-        "babel-cli": "^6.5.2",
-        "babel-core": "^6.7.7",
-        "babel-eslint": "^6.0.4",
+        "babel-cli": "^6.11.4",
+        "babel-core": "^6.11.4",
+        "babel-eslint": "^6.1.2",
         "babel-loader": "^6.2.4",
-        "babel-plugin-add-module-exports": "^0.1.3",
-        "babel-preset-es2015": "^6.6.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-preset-es2015": "^6.9.0",
         "babel-preset-es2015-loose": "^7.0.0",
-        "babel-preset-react": "^6.5.0",
+        "babel-preset-react": "^6.11.1",
         "babel-preset-stage-1": "^6.5.0",
-        "babel-register": "^6.7.2",
-        "bootstrap": "^3.3.6",
+        "babel-register": "^6.11.5",
+        "bootstrap": "^3.3.7",
         "chai": "^3.5.0",
         "colors": "^1.1.2",
         "css-loader": "^0.23.1",
-        "es5-shim": "^4.5.8",
-        "eslint": "^2.8.0",
-        "eslint-config-airbnb": "^8.0.0",
-        "eslint-plugin-babel": "^3.2.0",
-        "eslint-plugin-import": "^1.6.0",
-        "eslint-plugin-jsx-a11y": "^1.0.3",
-        "eslint-plugin-mocha": "^2.2.0",
-        "eslint-plugin-react": "^5.0.1",
-        "file-loader": "^0.8.5",
-        "history": "^2.1.0",
-        "html-webpack-plugin": "^2.16.0",
-        "karma": "^0.13.22",
-        "karma-cli": "^0.1.2",
-        "karma-mocha": "^0.2.2",
-        "karma-mocha-reporter": "^2.0.2",
-        "karma-phantomjs-launcher": "^1.0.0",
-        "karma-sinon-chai": "^1.2.0",
+        "eslint": "^2.13.1",
+        "eslint-config-airbnb": "^9.0.1",
+        "eslint-plugin-babel": "^3.3.0",
+        "eslint-plugin-import": "^1.11.1",
+        "eslint-plugin-jsx-a11y": "^1.5.5",
+        "eslint-plugin-mocha": "^4.1.0",
+        "eslint-plugin-react": "^5.2.2",
+        "file-loader": "^0.9.0",
+        "history": "^2.1.2",
+        "html-webpack-plugin": "^2.22.0",
+        "karma": "^1.1.1",
+        "karma-chrome-launcher": "^1.0.1",
+        "karma-firefox-launcher": "^1.0.0",
+        "karma-mocha": "^1.1.1",
+        "karma-mocha-reporter": "^2.0.4",
+        "karma-sinon-chai": "^1.2.3",
         "karma-sourcemap-loader": "^0.3.7",
         "karma-webpack": "^1.7.0",
-        "less": "^2.6.1",
+        "less": "^2.7.1",
         "less-loader": "^2.2.3",
-        "lodash": "^4.11.1",
-        "lolex": "^1.4.0",
-        "mocha": "^2.4.5",
-        "node-libs-browser": "^1.0.0",
-        "phantomjs-prebuilt": "^2.1.7",
-        "react": "^15.0.1",
-        "react-bootstrap": "^0.29.2",
-        "react-dom": "^15.0.1",
-        "react-router": "^2.3.0",
+        "lodash": "^4.14.0",
+        "mocha": "^2.5.3",
+        "react": "^15.2.1",
+        "react-addons-test-utils": "^15.4.2",
+        "react-bootstrap": "^0.30.0",
+        "react-dom": "^15.2.1",
+        "react-router-dom": "^4.0.0",
         "release-script": "^1.0.2",
-        "rimraf": "^2.5.2",
-        "shelljs": "^0.7.0",
-        "sinon": "^1.17.3",
+        "rimraf": "^2.5.4",
+        "shelljs": "^0.7.2",
+        "sinon": "^1.17.4",
         "sinon-chai": "^2.8.0",
         "style-loader": "^0.13.1",
         "url-loader": "^0.5.7",
-        "webpack": "^1.13.0",
+        "webpack": "^1.13.1",
         "webpack-dev-server": "^1.14.1",
-        "yargs": "^4.6.0"
+        "yargs": "^4.8.1"
     },
     "directories": {},
     "dist": {
-        "shasum": "a1e0b82f49d25a6083c72202ad16aaa64bba0e0c",
-        "tarball": "https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.23.1.tgz"
+        "shasum": "b99f5fcca812989d703eacbf400bed0529d040ab",
+        "tarball": "https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.24.2.tgz"
     },
     "files": [
         "lib"
     ],
-    "gitHead": "c26cfec6f9c0936409bbd02d6d1b7219630fb628",
+    "gitHead": "c206ac1acd2573f974e5f9bdbc5e6b5b18f5f753",
     "homepage": "https://github.com/react-bootstrap/react-router-bootstrap",
     "keywords": [
         "react",
@@ -136,7 +135,8 @@
     "name": "react-router-bootstrap",
     "optionalDependencies": {},
     "peerDependencies": {
-        "react": ">=0.14.0"
+        "react": ">=0.14.0",
+        "react-router-dom": ">=4.0.0"
     },
     "release-script": {
         "bowerRepo": "git@github.com:react-bootstrap/react-router-bootstrap-bower.git"
@@ -148,14 +148,14 @@
     "scripts": {
         "bower-prepare": "babel-node scripts/bower-prepare.js",
         "build": "rimraf lib && babel src -d lib && webpack && webpack -p && npm run bower-prepare",
-        "lint": "eslint *.js src test",
-        "prepublish": "npm run build",
+        "lint": "eslint scripts src test *.js",
         "release": "release",
         "tdd": "karma start",
         "test": "npm run lint && karma start --single-run",
         "visual-test": "open http://localhost:8080/ && webpack-dev-server --config webpack.visual.config.babel.js"
     },
-    "version": "0.23.1"
+    "version": "0.24.2",
+    "bin": {}
 }
 ```
 
